@@ -1,0 +1,84 @@
+.reservations-container {
+  padding: 20px;
+  max-width: 800px;
+  margin: 20px auto;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.reservations-container h1, .reservations-container h2 {
+  text-align: center;
+  color: #333;
+}
+
+.reservations-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.reservation-item {
+  background: #fff;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.reservation-item button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.reservation-item button:hover {
+  background-color: #c82333;
+}
+
+.reservation-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.reservation-form select,
+.reservation-form input,
+.reservation-form button {
+  padding: 12px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.reservation-form button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.reservation-form button:hover {
+  background-color: #218838;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .reservations-container {
+    padding: 15px;
+  }
+  .reservation-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .reservation-item button {
+    margin-top: 10px;
+  }
+}
